@@ -12,7 +12,6 @@ import ContactPage from '../ContactPage';
 import LoginPage from '../LoginPage';
 import RegisterPage from '../RegisterPage';
 import NotFoundPage from '../NotFoundPage';
-import Feedback from '../Feedback';
 import Footer from '../Footer';
 
 const pages = { ContentPage, ContactPage, LoginPage, RegisterPage, NotFoundPage };
@@ -53,20 +52,13 @@ class App {
         component = <ContactPage />;
         break;
 
-      case '/login':
-        component = <LoginPage />;
-        break;
 
-      case '/register':
-        component = <RegisterPage />;
-        break;
     }
 
     return component ? (
       <div>
         <Header />
         {component}
-        <Feedback />
         <Footer />
       </div>
     ) : <NotFoundPage />;
