@@ -7,6 +7,7 @@ import withStyles from '../../decorators/withStyles';
 import AppActions from '../../actions/AppActions';
 import AppStore from '../../stores/AppStore';
 import Header from '../Header';
+import Cover from '../Cover/Cover';
 import ContentPage from '../ContentPage';
 import ContactPage from '../ContactPage';
 import LoginPage from '../LoginPage';
@@ -56,8 +57,9 @@ class App {
     }
 
     return component ? (
-      <div>
+      <div className="Container">
         <Header />
+        <Cover />
         {component}
         <Footer />
       </div>

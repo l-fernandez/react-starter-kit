@@ -1,35 +1,32 @@
 /* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
 @import '../variables.less';
+@import '../frameless.less';
 
-.Navigation {
+.Cover {
+  background: -webkit-linear-gradient(@light-blue, @light-red); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(@light-blue, @light-red); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(@light-blue, @light-red); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(@light-blue, @light-red); /* Standard syntax */
+  height: 1000px;
 
-  &-link {
-    display: inline-block;
-    padding: 3px 8px;
-    text-decoration: none;
-    font-size: 1.125em; // ~18px
+  &-container{
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: @max-content-width;
 
-    &,
-    &:active,
-    &:visited {
-      color: @gray-darker;
-    }
+  }
+  &-title {
+    color:@white-base;
+    font-family: @font-family-title;
+    font-weight: @font-weight-semibold;
+    font-size: 100px;
+  }
 
-    &:hover {
-      color: @gray-light;
-    }
-
-    &--highlight {
-      margin-right: 8px;
-      margin-left: 8px;
-      border-radius: 3px;
-      background: rgba(0, 0, 0, .15);
-      color: #fff;
-
-      &:hover {
-        background: rgba(0, 0, 0, .3);
-      }
-    }
+  &-lead {
+    color:@white-base;
+    font-family: @font-family-title;
+    font-weight: @font-weight-regular;
+    font-size: 32px;
   }
 }
