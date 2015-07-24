@@ -15,11 +15,12 @@ class Cover {
     return (
       <div className="Cover">
         <div className="Cover-container">
-        <h1 className="Cover-title">Design x </h1>
-        <h2 className="Cover-lead">Design as tool  for humanising technology. </h2>
-
-
-      </div>
+          <h1 className="Cover-title">Design x </h1>
+          <h2 className="Cover-lead">Design as tool  for humanising technology. </h2>
+          <p>We are exploring how technology is impacting us at different scales.
+From its relationship with the self and the most personal, to its effect on our communities and finally to the challenges and opportunities for our society at large.
+We intend to uncover designs potential when moving beyond its traditional domain.</p>
+        </div>
     </div>
     );
   }

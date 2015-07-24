@@ -6,14 +6,14 @@ import withContext from '../../decorators/withContext';
 import withStyles from '../../decorators/withStyles';
 import AppActions from '../../actions/AppActions';
 import AppStore from '../../stores/AppStore';
-import Header from '../Header';
-import Cover from '../Cover/Cover';
 import ContentPage from '../ContentPage';
 import ContactPage from '../ContactPage';
 import LoginPage from '../LoginPage';
 import RegisterPage from '../RegisterPage';
 import NotFoundPage from '../NotFoundPage';
-import Footer from '../Footer';
+
+import Homepage from '../Homepage/Homepage';
+
 
 const pages = { ContentPage, ContactPage, LoginPage, RegisterPage, NotFoundPage };
 
@@ -58,10 +58,8 @@ class App {
 
     return component ? (
       <div className="Container">
-        <Header />
-        <Cover />
-        {component}
-        <Footer />
+      <Homepage />
+      {component}
       </div>
     ) : <NotFoundPage />;
   }
