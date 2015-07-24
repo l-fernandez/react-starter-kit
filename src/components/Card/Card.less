@@ -1,0 +1,52 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.less';
+
+.Card {
+
+margin-top: @2col;
+height: 600px;
+
+  &-container{
+    margin-left: @4col;
+    margin-right: 0;
+    border: @border-emphasis;
+    background: -webkit-linear-gradient(@light-red, @light-blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@light-red, @light-blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@light-red, @light-blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(@light-red, @light-blue); /* Standard syntax */
+
+  }
+  &-title {
+    color:@white-base;
+    font-family: @font-family-title;
+    font-weight: @font-weight-semibold;
+    font-size: 50px;
+    padding-left: @1col;
+    padding-right: @1col;
+    border: @border;
+
+  }
+
+  &-lead {
+    color:@white-base;
+    font-family: @font-family-base;
+    font-weight: @font-weight-regular;
+    font-size: 32px;
+    padding-left:  @2col;
+    padding-right:  @1col;
+    border: @border;
+  }
+  p {
+    color:@white-base;
+    font-family: @font-family-base;
+    font-weight: @font-weight-regular;
+    font-size: 18px;
+    padding-left:  @4col;
+    padding-right: @2col;
+    border: @border;
+  }
+
+  @media (max-width: @screen-sm-min) {
+  }
+}

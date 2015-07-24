@@ -7,7 +7,7 @@
   background: -o-linear-gradient(@light-blue, @light-red); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(@light-blue, @light-red); /* For Firefox 3.6 to 15 */
   background: linear-gradient(@light-blue, @light-red); /* Standard syntax */
-  height: 1000px;
+  height: 800px;
 
   &-container{
     width: 100%;
@@ -20,8 +20,8 @@
     font-family: @font-family-title;
     font-weight: @font-weight-semibold;
     font-size: 50px;
-    margin-left: 2/12*100%;
-    margin-right: 2/12*100%;
+    margin-left: @2col;
+    margin-right: @2col;
     border: @border;
     padding-top: 10%;
 
@@ -32,8 +32,8 @@
     font-family: @font-family-base;
     font-weight: @font-weight-regular;
     font-size: 32px;
-    margin-left:  2/12*100%;
-    margin-right:  6/12*100%;
+    margin-left:  @2col;
+    margin-right:  @6col;
     border: @border;
   }
   p {
@@ -41,8 +41,26 @@
     font-family: @font-family-base;
     font-weight: @font-weight-regular;
     font-size: 18px;
-    margin-left:  4/12*100%;
-    margin-right:  4/12*100%;
+    margin-left:  @4col;
+    margin-right: @4col;
     border: @border;
+  }
+
+  @media (max-width: @screen-sm-min) {
+    &-title{
+      margin-left:  @1col;
+      margin-right:  @1col;
+      border: @border;
+    }
+    &-lead{
+      margin-left:  @1col;
+      margin-right:  @1col;
+      border: @border;
+    }
+    p{
+      margin-left:  @1col;
+      margin-right:  @1col;
+      border: @border;
+    }
   }
 }

@@ -6,6 +6,7 @@ import withStyles from '../../decorators/withStyles';
 
 import Header from '../Header';
 import Cover from '../Cover/Cover';
+import Card from '../Card/Card';
 
 @withStyles(styles)
 class Homepage {
@@ -19,6 +20,7 @@ class Homepage {
       <div className="Homepage">
         <Header />
         <Cover />
+        <Card />
       </div>
     );
   }
