@@ -3,11 +3,10 @@
 @import '../variables.less';
 
 .Cover {
-  background: -webkit-linear-gradient(@light-blue, @light-red); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(@light-blue, @light-red); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(@light-blue, @light-red); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(@light-blue, @light-red); /* Standard syntax */
-  height: 800px;
+  background: @gradient-red-blue;
+  padding-top: @1col;
+  padding-bottom: @1col;
+  margin-bottom: @1col;
 
   &-container{
     width: 100%;
@@ -19,19 +18,19 @@
     color:@white-base;
     font-family: @font-family-title;
     font-weight: @font-weight-semibold;
-    font-size: 50px;
+    font-size: @font-size-title;
     margin-left: @2col;
     margin-right: @2col;
     border: @border;
-    padding-top: 10%;
+    padding-top: @1col;
 
   }
 
   &-lead {
     color:@white-base;
-    font-family: @font-family-base;
+    font-family:@font-family-title;
     font-weight: @font-weight-regular;
-    font-size: 32px;
+    font-size: @font-size-lead;
     margin-left:  @2col;
     margin-right:  @6col;
     border: @border;
@@ -40,7 +39,7 @@
     color:@white-base;
     font-family: @font-family-base;
     font-weight: @font-weight-regular;
-    font-size: 18px;
+    font-size: @font-size-text;
     margin-left:  @4col;
     margin-right: @4col;
     border: @border;
