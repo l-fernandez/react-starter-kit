@@ -14,18 +14,10 @@ class Card {
   render() {
     return (
       <div className="Card">
-        <div className="Card-logo">
-        </div>
         <div className="Card-container">
-          <div className="Card-top">
-            <h1 className="Card-title">Design x Depth</h1>
-            <h2 className="Card-lead"> Selfies, quantified self</h2>
-            <p>When design deals with the most personal, intimate and sacred new questions arises. Classic paradigms of digital technologies are questioned:</p>
-          </div>
-          <div className="Card-bottom">
-            <div className="Card-circle">
-            </div>
-          </div>
+          <h1 className="Card-title">Design x Depth</h1>
+          <h2 className="Card-lead"> Selfies, quantified self</h2>
+          <p>When design deals with the most personal, intimate and sacred new questions arises. Classic paradigms of digital technologies are questioned:</p>
         </div>
     </div>
     );

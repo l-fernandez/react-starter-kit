@@ -4,40 +4,24 @@
 
 .Card {
 
-  &-logo{
-    content:url('./dx-logo.svg');
-    mix-blend-mode: multiply;
-    position: absolute;
-    z-index: 2;
-    margin-top: -@3col;
-    margin-bottom: @1col;
-
-  }
-
+margin-top: @2col;
+height: 600px;
 
   &-container{
     margin-left: @4col;
-    margin-right: @3col;
+    margin-right: 0;
     border: @border-emphasis;
-  }
-
-  &-top{
-
-      padding-top: @1col;
-      padding-bottom: @1col;
-      background-image: url('./people.jpg');
-      background: @gradient-red-blue;
-
-
-
+    background: -webkit-linear-gradient(@light-red, @light-blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@light-red, @light-blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@light-red, @light-blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(@light-red, @light-blue); /* Standard syntax */
 
   }
-
   &-title {
     color:@white-base;
     font-family: @font-family-title;
     font-weight: @font-weight-semibold;
-    font-size: @font-size-title;
+    font-size: 50px;
     padding-left: @1col;
     padding-right: @1col;
     border: @border;
@@ -46,80 +30,23 @@
 
   &-lead {
     color:@white-base;
-    font-family: @font-family-title;
+    font-family: @font-family-base;
     font-weight: @font-weight-regular;
-    font-size: @font-size-lead;
+    font-size: 32px;
     padding-left:  @2col;
     padding-right:  @1col;
+    border: @border;
   }
-
-  &-middle{
-      padding-top: @1col;
-      padding-bottom: @1col;
-      padding-left:  @2col;
-      padding-right: @2col;
-      background: -webkit-linear-gradient(@light-red, @light-blue); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(@light-red, @light-blue); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(@light-red, @light-blue); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(@light-red, @light-blue); /* Standard syntax */
-  }
-
-  &-bottom {
-
-  }
-
-
   p {
     color:@white-base;
     font-family: @font-family-base;
     font-weight: @font-weight-regular;
-    font-size: @font-size-text;
-    padding-top: @1col;
-    padding-bottom: @1col;
-    padding-left:  @2col;
+    font-size: 18px;
+    padding-left:  @4col;
     padding-right: @2col;
-  }
-
-&-bottom{
-  padding: @1col;
-}
-
-  &-circle{
-    width:100px;
-    height:100px;
-    border-radius:50%;
-    background-image:url('./lfernandez.jpg');
-    background-repeat: round;
-    background-color: @light-blue;
-    background-blend-mode: multiply;
-
+    border: @border;
   }
 
   @media (max-width: @screen-sm-min) {
-
-    &-logo{
-
-      width:80%;
-
-
-    }
-
-    &-container{
-      margin-left: @1col;
-      margin-right: @1col;
-      margin-top: @1col;
-    }
-
-    &-lead {
-      padding-left:  @1col;
-      padding-right:  @1col;
-    }
-
-    &-middle{
-
-        padding-left:  @1col;
-        padding-right: @1col;
-    }
-
   }
 }
