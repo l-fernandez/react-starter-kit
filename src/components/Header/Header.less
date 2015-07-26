@@ -5,18 +5,19 @@
 @brand-color: #61dafb;
 
 .Header {
+
   &-container {
-
     padding: 20px 0;
-    margin-left: 2/12*100%;
-    margin-right: 2/12*100%;
-
+    margin-right: @2col;
+    margin-left: @2col;
+    border: @border;
   }
 
   &-brand {
     color: lighten(@brand-color, 10%);
     text-decoration: none;
     font-size: 1.75em; // ~28px
+
   }
 
   &-brandImg {
@@ -29,11 +30,23 @@
   &-nav {
     float: right;
     margin-top: 6px;
+
   }
 
   &-banner {
     text-align: center;
   }
+
+  @media (max-width: @screen-sm-min) {
+    &-container {
+
+      margin-right: @1col;
+      margin-left: @1col;
+
+    }
+
+  }
+
 
 
 }

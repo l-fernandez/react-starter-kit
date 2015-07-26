@@ -4,24 +4,40 @@
 
 .Card {
 
-margin-top: @2col;
-height: 600px;
+  &-logo{
+    content:url('./dx-logo.svg');
+    mix-blend-mode: multiply;
+    position: absolute;
+    z-index: 2;
+    margin-top: -@3col;
+    margin-bottom: @1col;
+
+  }
+
 
   &-container{
     margin-left: @4col;
-    margin-right: 0;
+    margin-right: @3col;
     border: @border-emphasis;
-    background: -webkit-linear-gradient(@light-red, @light-blue); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(@light-red, @light-blue); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(@light-red, @light-blue); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(@light-red, @light-blue); /* Standard syntax */
+  }
+
+  &-top{
+
+      padding-top: @1col;
+      padding-bottom: @1col;
+      background-image: url('./people.jpg');
+      background: @gradient-red-blue;
+
+
+
 
   }
+
   &-title {
     color:@white-base;
     font-family: @font-family-title;
     font-weight: @font-weight-semibold;
-    font-size: 50px;
+    font-size: @font-size-title;
     padding-left: @1col;
     padding-right: @1col;
     border: @border;
@@ -30,23 +46,80 @@ height: 600px;
 
   &-lead {
     color:@white-base;
-    font-family: @font-family-base;
+    font-family: @font-family-title;
     font-weight: @font-weight-regular;
-    font-size: 32px;
+    font-size: @font-size-lead;
     padding-left:  @2col;
     padding-right:  @1col;
-    border: @border;
   }
+
+  &-middle{
+      padding-top: @1col;
+      padding-bottom: @1col;
+      padding-left:  @2col;
+      padding-right: @2col;
+      background: -webkit-linear-gradient(@light-red, @light-blue); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(@light-red, @light-blue); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(@light-red, @light-blue); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(@light-red, @light-blue); /* Standard syntax */
+  }
+
+  &-bottom {
+
+  }
+
+
   p {
     color:@white-base;
     font-family: @font-family-base;
     font-weight: @font-weight-regular;
-    font-size: 18px;
-    padding-left:  @4col;
+    font-size: @font-size-text;
+    padding-top: @1col;
+    padding-bottom: @1col;
+    padding-left:  @2col;
     padding-right: @2col;
-    border: @border;
+  }
+
+&-bottom{
+  padding: @1col;
+}
+
+  &-circle{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-image:url('./lfernandez.jpg');
+    background-repeat: round;
+    background-color: @light-blue;
+    background-blend-mode: multiply;
+
   }
 
   @media (max-width: @screen-sm-min) {
+
+    &-logo{
+
+      width:80%;
+
+
+    }
+
+    &-container{
+      margin-left: @1col;
+      margin-right: @1col;
+      margin-top: @1col;
+    }
+
+    &-lead {
+      padding-left:  @1col;
+      padding-right:  @1col;
+    }
+
+    &-middle{
+
+        padding-left:  @1col;
+        padding-right: @1col;
+    }
+
   }
 }
