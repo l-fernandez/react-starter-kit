@@ -18,7 +18,7 @@ class Card {
         </div>
         <div className="Card-container">
           <div className="Card-top">
-            <h1 className="Card-title">Design x Depth</h1>
+            <h1 className="Card-title">Design x Intimacy</h1>
             <h2 className="Card-lead"> Selfies, quantified self</h2>
             <p>When design deals with the most personal, intimate and sacred new questions arises. Classic paradigms of digital technologies are questioned:</p>
           </div>

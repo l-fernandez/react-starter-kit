@@ -5,8 +5,8 @@ import styles from './Homepage.less';
 import withStyles from '../../decorators/withStyles';
 
 import Header from '../Header';
-import Cover from '../Cover/Cover';
 import Card from '../Card/Card';
+import Cover from '../Cover/Cover';
 
 @withStyles(styles)
 class Homepage {

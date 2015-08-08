@@ -4,21 +4,28 @@
 
 .Card {
 
+
+
   &-logo{
+
+    -webkit-transform: translate3d(-@4col,-100px,1px);
     content:url('./dx-logo.svg');
-    mix-blend-mode: multiply;
     position: absolute;
-    z-index: 2;
-    margin-top: -@3col;
-    margin-bottom: @1col;
+    mix-blend-mode: multiply;
+
+    width: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
   }
 
-
   &-container{
-    margin-left: @4col;
-    margin-right: @3col;
+    margin-left: @5col;
+    margin-right: @2col;
     border: @border-emphasis;
+    position: absolute;
   }
 
   &-top{
@@ -26,7 +33,7 @@
       padding-top: @1col;
       padding-bottom: @1col;
       background-image: url('./people.jpg');
-      background: @gradient-red-blue;
+      background: @light-blue;
 
 
 
@@ -65,6 +72,7 @@
   }
 
   &-bottom {
+    background: @white-base;
 
   }
 
