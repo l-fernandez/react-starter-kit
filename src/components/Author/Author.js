@@ -16,9 +16,12 @@ class Author {
       <div className="Author">
         <div className="Author-image">
         </div>
-        <span className="Author-name">
+        <div className="Author-name">
         Lorenzo Fernandez
-        </span>
+        </div>
+        <div className="Author-bio">
+        Interaction Designer from @IDEO Munich, for now in Berlin. Interested in anything related to #politics, #media and design for citizens.
+        </div>
       </div>
     );
   }
