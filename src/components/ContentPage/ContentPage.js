@@ -4,6 +4,9 @@ import React, { PropTypes } from 'react';
 import styles from './ContentPage.less';
 import withStyles from '../../decorators/withStyles';
 
+import Card from '../Card/Card';
+import Cover from '../Cover/Cover';
+
 @withStyles(styles)
 class ContentPage {
 
@@ -21,12 +24,8 @@ class ContentPage {
     this.context.onSetTitle(this.props.title);
     return (
       <div className="ContentPage">
-        <div className="ContentPage-container">
-          {
-            this.props.path === '/' ? null : <h1>{this.props.title}</h1>
-          }
-          <div dangerouslySetInnerHTML={{__html: this.props.content || ''}} />
-        </div>
+        <Cover />
+        <Card />
       </div>
     );
   }

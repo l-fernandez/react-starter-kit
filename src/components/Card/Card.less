@@ -4,25 +4,20 @@
 
 .Card {
 
-
-
   &-logo{
 
-    -webkit-transform: translate3d(-@4col,-100px,1px);
+    -webkit-transform: translate3d(0px,0px,1px);
+    margin-left: @2col;
+    margin-right: @6col;
     content:url('./dx-logo.svg');
     position: absolute;
-    mix-blend-mode: multiply;
-
-    width: 80%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    mix-blend-mode: screen;
+    top: 600px;
 
   }
 
   &-container{
-    margin-left: @5col;
+    margin-left: @4col;
     margin-right: @2col;
     border: @border-emphasis;
     position: absolute;
@@ -30,10 +25,10 @@
 
   &-top{
 
-      padding-top: @1col;
-      padding-bottom: @1col;
-      background-image: url('./people.jpg');
-      background: @light-blue;
+    padding-top: @1col;
+    padding-bottom: @1col;
+    background-image: url('./people.jpg');
+    background: @light-blue;
 
 
 
@@ -61,19 +56,20 @@
   }
 
   &-middle{
-      padding-top: @1col;
-      padding-bottom: @1col;
-      padding-left:  @2col;
-      padding-right: @2col;
-      background: -webkit-linear-gradient(@light-red, @light-blue); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(@light-red, @light-blue); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(@light-red, @light-blue); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(@light-red, @light-blue); /* Standard syntax */
+    padding-top: @1col;
+    padding-bottom: @1col;
+    padding-left:  @2col;
+    padding-right: @2col;
+    background: -webkit-linear-gradient(@light-red, @light-blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@light-red, @light-blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@light-red, @light-blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(@light-red, @light-blue); /* Standard syntax */
   }
 
   &-bottom {
     background: @white-base;
-
+    padding-bottom: @3col;
+    padding-top: @1col;
   }
 
 
@@ -88,28 +84,15 @@
     padding-right: @2col;
   }
 
-&-bottom{
-  padding: @1col;
-}
-
-  &-circle{
-    width:100px;
-    height:100px;
-    border-radius:50%;
-    background-image:url('./lfernandez.jpg');
-    background-repeat: round;
-    background-color: @light-blue;
-    background-blend-mode: multiply;
-
+  &-bottom{
   }
+
+
 
   @media (max-width: @screen-sm-min) {
 
     &-logo{
-
       width:80%;
-
-
     }
 
     &-container{
@@ -125,8 +108,8 @@
 
     &-middle{
 
-        padding-left:  @1col;
-        padding-right: @1col;
+      padding-left:  @1col;
+      padding-right: @1col;
     }
 
   }

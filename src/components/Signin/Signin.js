@@ -1,15 +1,11 @@
 /*! React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
 import React, { PropTypes } from 'react';
-import styles from './Homepage.less';
+import styles from './Signin.less';
 import withStyles from '../../decorators/withStyles';
 
-import Header from '../Header';
-import Card from '../Card/Card';
-import Cover from '../Cover/Cover';
-
 @withStyles(styles)
-class Homepage {
+class Signin {
 
   static propTypes = {
     className: PropTypes.string
@@ -17,14 +13,13 @@ class Homepage {
 
   render() {
     return (
-      <div className="Homepage">
-        <Header />
-        <Cover />
-        <Card />
-      </div>
+      <div className="Signin">
+        <div className="Signin-container">
+        </div>
+    </div>
     );
   }
 
 }
 
-export default Homepage;
+export default Signin;

@@ -8,14 +8,11 @@ import AppActions from '../../actions/AppActions';
 import AppStore from '../../stores/AppStore';
 import ContentPage from '../ContentPage';
 import ContactPage from '../ContactPage';
-import LoginPage from '../LoginPage';
-import RegisterPage from '../RegisterPage';
 import NotFoundPage from '../NotFoundPage';
+import Header from '../Header';
 
-import Homepage from '../Homepage/Homepage';
 
-
-const pages = { ContentPage, ContactPage, LoginPage, RegisterPage, NotFoundPage };
+const pages = { ContentPage, ContactPage, NotFoundPage };
 
 @withContext
 @withStyles(styles)
@@ -43,8 +40,6 @@ class App {
     switch (this.props.path) {
 
       case '/':
-      case '/about':
-      case '/privacy':
         let page = AppStore.getPage(this.props.path);
         component = React.createElement(pages[page.component], page);
         break;
@@ -58,8 +53,8 @@ class App {
 
     return component ? (
       <div className="Container">
-      <Homepage />
-      {component}
+        <Header />
+        {component}
       </div>
     ) : <NotFoundPage />;
   }

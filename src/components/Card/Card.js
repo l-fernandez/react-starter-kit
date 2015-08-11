@@ -2,7 +2,10 @@
 
 import React, { PropTypes } from 'react';
 import styles from './Card.less';
+import Author from '../Author/Author';
 import withStyles from '../../decorators/withStyles';
+
+
 
 @withStyles(styles)
 class Card {
@@ -23,8 +26,10 @@ class Card {
             <p>When design deals with the most personal, intimate and sacred new questions arises. Classic paradigms of digital technologies are questioned:</p>
           </div>
           <div className="Card-bottom">
-            <div className="Card-circle">
-            </div>
+              <Author/>
+              <Author/>
+              <Author/>
+              <Author/>
           </div>
         </div>
     </div>
