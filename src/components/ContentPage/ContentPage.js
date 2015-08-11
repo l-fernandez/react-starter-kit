@@ -6,6 +6,7 @@ import withStyles from '../../decorators/withStyles';
 
 import Card from '../Card/Card';
 import Cover from '../Cover/Cover';
+import Dlogo from '../Dlogo/Dlogo';
 
 @withStyles(styles)
 class ContentPage {
@@ -25,6 +26,7 @@ class ContentPage {
     return (
       <div className="ContentPage">
         <Cover />
+        <Dlogo />
         <Card />
       </div>
     );

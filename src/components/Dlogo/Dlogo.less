@@ -1,0 +1,31 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.less';
+
+.Dlogo {
+  &-top{
+
+    -webkit-transform: translate3d(0px, 0px, 1px) rotateZ(-90deg) scale3D(0.4,0.4,0.4);
+    margin-left: @1col;
+    width: 100%;
+    content:url('./dx-logo.svg');
+    position: absolute;
+    mix-blend-mode: lighten;
+    top: 100px;
+  }
+  &-bottom{
+    -webkit-transform: translate3d(0px,0px,-1px) rotateZ(90deg) scale3D(1.2,1.2,1.2);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    content:url('./dx-logo.svg');
+    position: absolute;
+    mix-blend-mode: lighten;
+    top: 1200px;
+  }
+
+  @media (max-width: @screen-sm-min) {
+  }
+
+
+}

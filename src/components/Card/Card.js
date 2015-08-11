@@ -17,8 +17,6 @@ class Card {
   render() {
     return (
       <div className="Card">
-        <div className="Card-logo">
-        </div>
         <div className="Card-container">
           <div className="Card-top">
             <h1 className="Card-title">Design x Intimacy</h1>
