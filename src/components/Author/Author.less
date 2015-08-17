@@ -3,32 +3,35 @@
 @import '../variables.less';
 
 .Author {
-margin-left: @1col;
-margin-right: @1col;
-margin-bottom: @1col;
+  margin-left: @1col;
+  margin-right: @1col;
 
 
   &-image{
-    width:100px;
-    height:100px;
+    width:200px;
+    height:200px;
     background-image:url('./lfernandez.jpg');
     background-repeat: round;
     background-color: @light-blue;
     background-blend-mode: screen;
   }
 
+  &-info {
+    -webkit-transform: translateY(-70%);
+  }
 
   &-name {
-    margin-left: @2col;
+    margin-left: @3col;
     font-family: @font-family-title;
     font-weight: @font-weight-semibold;
     font-size: @font-size-lead;
   }
   &-bio {
-    margin-left: @2col;
+    margin-left: @3col;
     font-family: @font-family-base;
     font-weight: @font-weight-regular;
     font-size: @font-size-caption;
+    background-color: @white-base;
   }
 
   @media (max-width: @screen-sm-min) {

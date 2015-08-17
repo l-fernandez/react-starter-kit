@@ -3,10 +3,49 @@
 @import '../variables.less';
 
 .Signin {
-  -webkit-transform: translate3d(0px,1000px,-1px);
-  width: 100%;
-  border: @border-emphasis;
-  height: 400px;
+  padding-left:  @2col;
+  padding-right:  @2col;
+  padding-bottom: @1col;
+  padding-top: @1col;
   background: @white-base;
-  position: absolute;
+  border-top: @border-emphasis;
+
+  &-form{
+    width: 100%;
+  }
+
+  &-title{
+    font-family: @font-family-title;
+    font-weight: @font-weight-regular;
+    font-size: @font-size-lead;
+  }
+
+
+  &-field{
+    font-family: @font-family-base;
+    font-weight: @font-weight-regular;
+    font-size: @font-size-text;
+    margin-top: @1col/2;
+    background-color: @light-blue;
+    padding-top: @1col/2;
+    padding-bottom: @1col/2;
+    width: 100%;
+    text-align: center;
+  }
+
+  &-pure-button{
+    background-color: @light-blue;
+    font-family: @font-family-base;
+    font-weight: @font-weight-regular;
+    font-size: @font-size-text;
+    margin-top: @1col/2;
+    background-color: @light-blue;
+    padding-top: @1col/2;
+    padding-bottom: @1col/2;
+    width: 100%;
+    color: @white-base;
+
+  }
+
+
 }

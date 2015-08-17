@@ -8,6 +8,7 @@ import Card from '../Card/Card';
 import Cover from '../Cover/Cover';
 import Dlogo from '../Dlogo/Dlogo';
 
+
 @withStyles(styles)
 class ContentPage {
 
@@ -25,9 +26,11 @@ class ContentPage {
     this.context.onSetTitle(this.props.title);
     return (
       <div className="ContentPage">
-        <Cover />
-        <Dlogo />
-        <Card />
+        <div className="ContentPage-container">
+          <Cover />
+          <Dlogo />
+          <Card />
+        </div>
       </div>
     );
   }

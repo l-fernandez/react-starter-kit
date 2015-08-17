@@ -6,31 +6,55 @@
 
   &-container{
     margin-left: @4col;
-    margin-right: @2col;
-    border: @border-emphasis;
+    margin-right: @1col;
+    padding-bottom: @1col;
     position: absolute;
+    background: @light-blue;
+    mix-blend-mode: screen;
   }
 
   &-top{
-
     padding-top: @1col;
     padding-bottom: @1col;
-    background: @light-blue;
-    mix-blend-mode: screen;
+    padding-left: @1col;
+    padding-right: @1col;
+    background: @white-base;
 
+  }
 
+  &-details{
+    font-family: @font-family-title;
+    font-weight: @font-weight-regular;
+    font-size: @font-size-lead;
+
+  }
+
+  &-location{
+    font-family: @font-family-base;
+    font-weight: @font-weight-regular;
+    font-size: @font-size-text;
   }
 
   &-title {
-    color:@white-base;
     font-family: @font-family-title;
     font-weight: @font-weight-semibold;
     font-size: @font-size-title;
-    padding-left: @1col;
-    padding-right: @1col;
-    border: @border;
+
 
   }
+
+  &-middle{
+    color:@white-base;
+    font-family: @font-family-base;
+    font-weight: @font-weight-regular;
+    font-size: @font-size-text;
+    padding-top: @1col;
+    padding-bottom: @1col;
+    padding-left:  @2col;
+    padding-right: @2col;
+  }
+
+
 
   &-lead {
     color:@white-base;
@@ -41,34 +65,17 @@
     padding-right:  @1col;
   }
 
-  &-middle{
-    padding-top: @1col;
-    padding-bottom: @1col;
-    padding-left:  @2col;
-    padding-right: @2col;
-    background: -webkit-linear-gradient(@light-red, @light-blue); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(@light-red, @light-blue); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(@light-red, @light-blue); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(@light-red, @light-blue); /* Standard syntax */
-  }
+
 
   &-bottom {
     background: @white-base;
-    padding-bottom: @3col;
-    padding-top: @1col;
-  }
-
-
-  p {
-    color:@white-base;
-    font-family: @font-family-base;
-    font-weight: @font-weight-regular;
-    font-size: @font-size-text;
-    padding-top: @1col;
     padding-bottom: @1col;
-    padding-left:  @2col;
-    padding-right: @2col;
+    padding-top: @1col;
+
   }
+
+
+
 
   &-bottom{
   }

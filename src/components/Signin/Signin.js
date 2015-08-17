@@ -14,8 +14,12 @@ class Signin {
   render() {
     return (
       <div className="Signin">
-        <div className="Signin-container">
-        </div>
+        <div className="Signin-title">Sign up!</div>
+          <form action="https://docs.google.com/forms/d/1goKoXZ9G3CEXsD4JlzQ00gQotyK_K4Mtqt8WAo1LEu8/formResponse" className="Signin-form">
+          <input type="text" placeholder="Email" className="Signin-field" name="entry.2145706716"></input>
+          <input type="text" placeholder="Name" className="Signin-field" name="entry.1824987454"></input>
+          <button type="submit" className="Signin-pure-button" name="submit">Sign in</button>
+        </form>
     </div>
     );
   }
