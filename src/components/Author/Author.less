@@ -5,19 +5,23 @@
 .Author {
   margin-left: @1col;
   margin-right: @1col;
+  margin-bottom: @1col;
+  overflow: hidden;
 
 
   &-image{
-    width:200px;
-    height:200px;
+    width:@3col;
+    padding-top: @3col;
     background-image:url('./lfernandez.jpg');
     background-repeat: round;
     background-color: @light-blue;
     background-blend-mode: screen;
+    float: left;
   }
 
   &-info {
-    -webkit-transform: translateY(-70%);
+    padding-left: @1col;
+
   }
 
   &-name {

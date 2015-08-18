@@ -8,7 +8,7 @@
   padding-bottom: @1col;
   padding-top: @1col;
   background: @white-base;
-  border-top: @border-emphasis;
+  margin-top: @2col;
 
   &-form{
     width: 100%;
@@ -18,6 +18,7 @@
     font-family: @font-family-title;
     font-weight: @font-weight-regular;
     font-size: @font-size-lead;
+    text-align: center;
   }
 
 
@@ -26,11 +27,16 @@
     font-weight: @font-weight-regular;
     font-size: @font-size-text;
     margin-top: @1col/2;
-    background-color: @light-blue;
+    background-color: @white-base;
     padding-top: @1col/2;
     padding-bottom: @1col/2;
+    border-radius: 0px;
+    border: 1px solid @light-blue;
     width: 100%;
     text-align: center;
+    -webkit-appearance: none;
+    padding-left: 0%;
+    padding-right: 0%;
   }
 
   &-pure-button{
@@ -44,7 +50,15 @@
     padding-bottom: @1col/2;
     width: 100%;
     color: @white-base;
+    -webkit-appearance: none;
+    padding-left: 0%;
+    padding-right: 0%;
 
+  }
+
+  @media (max-width: @screen-sm-min) {
+    padding-left:  @1col;
+    padding-right:  @1col;
   }
 
 
