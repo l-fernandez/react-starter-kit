@@ -1,3 +1,4 @@
+
 /*! React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
 import React, { PropTypes } from 'react';
@@ -5,7 +6,6 @@ import styles from './Card.less';
 import Author from '../Author/Author';
 import withStyles from '../../decorators/withStyles';
 import Signin from '../Signin/Signin';
-
 
 
 @withStyles(styles)

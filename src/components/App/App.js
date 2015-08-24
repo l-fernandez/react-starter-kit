@@ -9,7 +9,7 @@ import AppStore from '../../stores/AppStore';
 import ContentPage from '../ContentPage';
 import ContactPage from '../ContactPage';
 import NotFoundPage from '../NotFoundPage';
-import Header from '../Header';
+
 
 
 const pages = { ContentPage, ContactPage, NotFoundPage };
@@ -53,7 +53,6 @@ class App {
 
     return component ? (
       <div className="Container">
-        <Header />
         {component}
       </div>
     ) : <NotFoundPage />;

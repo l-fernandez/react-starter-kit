@@ -7,7 +7,8 @@ import withStyles from '../../decorators/withStyles';
 import Card from '../Card/Card';
 import Cover from '../Cover/Cover';
 import Dlogo from '../Dlogo/Dlogo';
-
+import Social from '../Social/Social';
+import Header from '../Header';
 
 @withStyles(styles)
 class ContentPage {
@@ -27,10 +28,12 @@ class ContentPage {
     return (
       <div className="ContentPage">
         <div className="ContentPage-container">
+          <Header />
           <Cover />
           <Dlogo />
           <Card />
         </div>
+        <Social />
       </div>
     );
   }

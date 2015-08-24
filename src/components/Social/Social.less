@@ -1,0 +1,62 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.less';
+
+.Social {
+
+  position: absolute;
+  z-index:100;
+  bottom: 0px;
+  right: 0px;
+  border: 1px solid @white-base;
+  width: @1col/2;
+  opacity: 0.5;
+
+  &:hover{
+    transition: background-color 0.8s ease;
+    opacity: 1;
+  }
+
+  &-twitter-button{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    &:hover{
+      transition: background-color 0.5s ease;
+      background-color: @light-blue;
+    }
+  }
+
+  &-twitter-icon{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    content: url('./Twitter_logo.svg');
+    -webkit-transform: scale(0.3);
+  }
+
+  &-facebook-button{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    &:hover{
+      transition: background-color 0.5s ease;
+      background-color: @light-blue;
+    }
+  }
+
+  &-facebook-icon{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    content: url('./Facebook_logo.svg');
+    -webkit-transform: scale(0.3);
+  }
+
+
+  @media (max-width: @screen-sm-min) {
+    display: none;
+  }
+
+
+}

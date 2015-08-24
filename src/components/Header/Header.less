@@ -2,50 +2,41 @@
 
 @import '../variables.less';
 
-@brand-color: #61dafb;
 
 .Header {
-  background: @white-base;
-  width: 100%;
   position: absolute;
+  z-index:100;
+  width: 100%;
 
   &-container {
-    padding: 20px 0;
     margin-right: @2col;
     margin-left: @2col;
-    border: @border;
+    margin-top: @1col;
   }
 
-  &-brand {
-    color: lighten(@brand-color, 10%);
-    text-decoration: none;
-    font-size: 1.75em; // ~28px
-
+  &-IDEO {
+    float: left;
+    height: 20px;
   }
 
-  &-brandImg {
-
-  }
-
-  &-brandTxt {
-  }
-
-  &-nav {
+  &-Designx {
     float: right;
-    margin-top: 6px;
-
+    height: 30px;
   }
 
-  &-banner {
-    text-align: center;
+  &-border {
+    border-bottom: 1px solid @white-base;
+    padding-top: @1col;
   }
 
   @media (max-width: @screen-sm-min) {
     &-container {
-
       margin-right: @1col;
       margin-left: @1col;
-
+    }
+    &-border {
+      border-bottom: 1px solid @white-base;
+      padding-top: 45px;
     }
 
   }

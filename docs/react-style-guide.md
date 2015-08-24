@@ -74,7 +74,8 @@ Use [BEM](https://bem.info/) approach for naming CSS classes. See also [SUIT CSS
 
     &,
     .Navigation-items:hover & {
-      background: @default-bg-color;
+      background: @default-bg-color;  
+
     }
 
     &--selected,
@@ -102,7 +103,7 @@ class SampleComponent extends Component {
   static propTypes = { ... };
 
   static defaultProps = { ... };
-  
+
   constructor() {
     super();
     this.state = { ... };
